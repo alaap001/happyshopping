@@ -1,0 +1,9 @@
+.container
+	.margin
+	-if @feedbacks != nil
+		- @feedbacks.each do |f|
+			.h4
+				= f.firstname+': '
+			.h3
+				=f.what_you_think
+			%hr

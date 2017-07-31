@@ -1,0 +1,51 @@
+.container-fluid
+	#i7plusheader
+		.text-center
+			%p
+				Happy Shopping
+				%br
+				iPhone 7 Plus
+				%br
+				Cases
+				%hr{'style':'width:30%;'}
+				%hr{'style':'width:15%;'}
+	#paginatediv
+		%p
+			= link_to 'Home' , root_path
+			>
+			=link_to ' iPhone 7 Plus'
+		%hr
+
+	.crouseldiv
+		.image
+		
+		.image.img1
+			.text-center{'style':'margin-top:390px;'}
+				.h4
+					Happy iphone 7 Plus Midnight Blue Case
+				.grey
+					From 799.00
+		
+		.image.img2{'style':'margin-left:20px;'}
+			.text-center{'style':'margin-top:390px;'}
+				.h4
+					Happy iphone 7 Plus Tangerine Tango Case
+				.grey
+					From 799.00
+			
+		.image.img3{'style':'margin-left:20px;'}
+			.text-center{'style':'margin-top:390px;'}
+				.h4
+					Happy iphone 7 Plus Sea Blue Case
+				.grey
+					From 799.00
+			
+		.image.img4{'style':'margin-left:20px;'}
+			.text-center{'style':'margin-top:390px;'}
+				.h4
+					Happy iphone 7 Plus Moon grey Case
+				.grey
+					From 799.00
+
+	.margin
+	= render 'footer'

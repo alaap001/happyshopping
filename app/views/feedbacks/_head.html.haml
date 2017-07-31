@@ -1,0 +1,27 @@
+#headdiv.text-center
+	.col-sm-4
+		%p{'style':' font-size:16px; font-weight:700; color:red;'} Welcome To Happy Shopping
+	.col-sm-4
+		-if user_signed_in?
+			= current_user.firstname+' '+current_user.lastname
+			%br
+			=link_to 'Sign Out', destroy_user_session_path, method: :delete , data: {confirm: 'Are you sure ?'}
+		-else
+			=link_to new_user_session_path do
+				%span.glyphicon.glyphicon-user
+	.col-sm-4.glyphicon.glyphicon-heart-empty	
+%hr
+
+#lists
+	#logo
+		
+		%h2 
+			=link_to 'Happy Shopping' , root_path
+	%ul{'id':'menubarul', 'class':'clearfix'}
+		%li= link_to 'Home' , root_path
+		%li= link_to 'Care'
+		%li= link_to 'Iphone 7 plus' , iphone7plus_path	
+		%li= link_to 'Iphone 7'	, iphone7_path
+		%li= link_to 'Iphone 6/6s'	, iphone6_path
+		%li= link_to 'Ipad'	, ipad_path	
+

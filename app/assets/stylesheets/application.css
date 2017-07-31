@@ -1,0 +1,244 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+#headdiv{
+	height: 80px;
+	padding-top: 30px;
+}
+#maindiv{
+margin:0 30px 0 30px;
+}
+ #lists{
+ 	display: inline-flex;
+ 	width: 100%;
+ }
+ #logo{
+ 	width: 20%;
+ }
+ #logo a{
+ 	 	color: black;
+ 	text-decoration: none;
+ }
+#menubarul{
+	margin: 15px 0 0 0px;
+	padding: 0px;
+width: 80%;
+	
+}
+#menubarul li a{
+	text-decoration: none;
+	display: block;
+	color: grey;
+}
+
+#menubarul li a:hover{
+	background-color: #eee;
+}
+
+#menubarul li{
+	width: 14%;
+	list-style: none;
+	float: left;
+	height: 50px;
+	font-size: 20px;
+	line-height: 50px;
+	text-align: center;
+}
+#headimage{
+	margin-top: 50px;
+	width: 100%;
+	height: 30%;
+	min-height: 500px;
+}
+#headimage img{
+	width: 100%;
+	height: 100%;
+}
+.crouseldiv{
+	margin-top: 30px;
+	width: 100%;
+	display: flex;
+}
+.image{
+	width: 100%;
+	height: 370px;
+}
+.img1{
+	background-image: url('i7plus2'); 
+	background-size: cover;
+}
+.img1:hover{
+	transition: all .5s;
+	background-image: url('i7plus1');
+}
+.img2{
+	background-image: url('red back');
+	background-size: cover;
+}
+.img2:hover{
+	transition: all .5s;
+	background-image: url('red front');
+}
+.img3{
+	background-image: url('i7plus4'); 
+	background-size: cover;
+}
+.img3:hover{
+	transition: all .5s;
+	background-image: url('i7plus3');
+}
+
+.img4{
+	background-image: url('i7plus5'); 
+	background-size: cover;
+}
+.img4:hover{
+	transition: all .5s;
+	background-image: url('i7plus6');
+}
+.img21{
+	background-image: url('i71');
+	background-size: cover;
+}
+.img21:hover{
+	transition: all .5s;
+	background-image: url('i72');
+}
+.img22{
+	background-image: url('i73');
+	background-size: cover;
+}
+.img22:hover{
+	transition: all .5s;
+	background-image: url('i74');
+}
+.img23{
+	background-image: url('i75');
+	background-size: cover;
+}
+.img23:hover{
+	transition: all .5s;
+	background-image: url('i76');
+}
+.img24{
+	background-image: url('i78');
+	background-size: cover;
+}
+.img24:hover{
+transition: all .5s;
+	background-image: url('i79');
+}
+.img31{
+	background-image: url('i61'); 
+	background-size: cover;
+}
+.img31:hover{
+	transition: all .5s;
+	background-image: url('i63');
+}
+.img32{
+	background-image: url('i62'); 
+	background-size: cover;
+}
+.img32:hover{
+	transition: all .5s;
+	background-image: url('i64');
+}
+.img33{
+	background-image: url('i65'); 
+	background-size: cover;
+}
+.img33:hover{
+	transition: all .5s;
+	background-image: url('i66');
+}
+.img34{
+	background-image: url('i61'); 
+	background-size: cover;
+}
+.img34:hover{
+	transition: all .5s;
+	background-image: url('i63');
+}
+
+#blackdiv{
+	display: table;
+	width: 100%;
+	background-color: #212121;
+	font-size: 25px;
+	font-weight: 800;
+	height: 100%;
+	color: white;
+}
+
+#blackdiv p{
+	display: table-cell;
+	vertical-align: middle;
+}
+#reviews{
+	word-spacing: 8px;
+	margin-top: 100px;
+	padding: 10px;
+	font-weight: 600;
+	line-height: 30px;
+	font-size: 20px;
+}
+
+#feedback{
+	
+	padding:20px;
+	border:3px black solid;
+	}
+.margin{
+	margin-top: 150px;
+}
+#i7plusheader{
+	height: 500px;
+	margin:40px 10px 10px 10px;
+	background-color: #212121;
+	color: #fff;
+	font-weight: 800;
+	font-size: 60px;
+	
+	padding-top: 90px;
+
+}
+footer{
+	height: 180px;
+	padding: 52px;
+	margin-bottom: 20px; 
+	width: 100%;
+	background-color: #efefef;
+}
+#paginatediv{
+	height: 70px;
+	margin-top: 10px;
+	padding: 10px;
+	width: 100%;
+	color: #919191;
+}
+#paginatediv a{
+	color: #212121;
+	text-decoration: none;
+}
+.grey{
+	color: #919191;
+	padding: 5px;
+}
+
+.h1care{
+	font-weight: 700;
+	font-size: 37px;
+}

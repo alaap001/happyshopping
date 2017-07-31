@@ -1,0 +1,97 @@
+#mainheader.container-fluid
+
+	#headimage
+		= image_tag 'headimage.jpg'
+	.crouseldiv
+		.image
+			#blackdiv.text-center
+				%p
+					Happy Shopping
+					%br
+					Iphone 7+
+		.image.img1
+			
+		.image.img2
+			
+		.image.img3
+			
+		.image.img4
+			
+	.crouseldiv
+		.image
+			#blackdiv.text-center
+				%p
+					Happy Shopping
+					%br
+					Iphone 7
+		.image.img21
+			
+		.image.img22
+			
+		.image.img23
+			
+		.image.img24
+			
+
+	.crouseldiv
+		.image
+			#blackdiv.text-center
+				%p
+					Happy Shopping
+					%br
+					Iphone 6/6s
+		.image.img31
+			
+		.image.img32
+			
+		.image.img33
+			
+		.image.img34
+	#reviews.text-center.container
+		%p{'style':'font-weight:800; font-size:18px; line-height:30px;'}
+			Happy Shopping Reviews
+		%hr
+		%p.lead
+			Was really irritated by the jarring sides and halo that was left on the sides of the previous screen protector i was using which didn't cover edge to edge.
+			%br
+			I was apprehensive at first but went in for this shield anyways and i have been pleased beyond anything i expected. All the doubts i had simply vanished after i applied this! Details below:
+			%br
+			1- I was concerned whether the screen portion had glue or not- It does!
+			%br
+			2- i was confused whether the sides were glass or not- They are and are seemless with the screen.
+			%br
+			3- was wary whether the black sides would be color matched- They are perfectly black and will hopefully remain that way.
+			%br
+			4- was concerned whether the sides curved into the phone edges in a thoughtful manner or not- They do and are practically the same curvature as the phone screen was.
+			%br
+			The phone just looks like a chubbier version of itself (which is sort of cute) and the screen appears somewhat deeper inside the body but doesn't take away from the experience when combined with the luster black case.
+		%p.lead
+			PS- i like the shield so much that this is probably the longest review i have ever written for something as simple as a screenguard. This product is that good. 
+	.margin
+	#feedback.container
+		.text-center.lead
+			Give Your Valuable FeedBack
+		= form_for @feedback do |f|
+			.form-group
+				=f.label :firstname , class:'h2 '
+				= f.text_field :firstname, class:'form-control'
+			.form-group
+				=f.label :lastname , class:'h2 '
+				= f.text_field :lastname, class:'form-control'
+			.form-group
+				=f.label :phone_number , class:'h2 '
+				= f.number_field :phone, class:'form-control'
+			.form-group
+				=f.label :email , class:'h2 '
+				= f.email_field :email, class:'form-control'
+			.form-group
+				=f.label :what_you_think , class:'h2 '
+				= f.text_area :what_you_think, class:'form-control'
+			.form-group
+				= f.submit :GiveFeedback , class:'btn btn-lg btn-primary'
+		%br
+		.text-center
+			= link_to 'See All Feedbacks' , feedbacks_path
+					
+	.margin
+	= render 'footer'
