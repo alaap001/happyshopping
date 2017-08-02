@@ -1,6 +1,6 @@
 #headdiv.text-center
 	.col-sm-4
-		%p{'style':' font-size:16px; font-weight:700; color:red;'} Welcome To Happy Shopping
+		= image_tag 'capture'
 	.col-sm-4
 		-if user_signed_in?
 			= current_user.firstname+' '+current_user.lastname
